@@ -3,8 +3,8 @@ static boolean Isprime(int a){    //a is parameter
   
         boolean result = true;    // default value of return varaible
   
-        if (a==2){                // checking for 2
-            result = true;
+        if (a<2){                // checking for 1 
+            result = false;
         }
         else{
         int fact = a/2;           // reducing the total factors ny half
@@ -14,5 +14,6 @@ static boolean Isprime(int a){    //a is parameter
             }
         }
     }
-        return result;            // return
+            return result;            // return
     }
+}

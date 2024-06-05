@@ -1,8 +1,4 @@
 public class Concept {
-    public static <String> void main(String[] args) {
-        System.out.println(reverse(123445668, 0));
-
-    }
 
 //        Reverse a number
     static int reverse(int n, int rev){

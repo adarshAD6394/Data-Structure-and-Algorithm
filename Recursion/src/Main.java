@@ -1,9 +1,11 @@
+
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-
-        System.out.println(sumOfDigits(12350));
+        rightinverseTriangle(6, 0);
+//            leftinverseTriangle(6, 0);
 //        System.out.println(product(0));
 //        System.out.println(sum(10));
 //        print(10);
@@ -11,6 +13,31 @@ public class Main {
 //        int tar = 18;
 //        System.out.println(binary(n, tar, 0, n.length - 1));
     }
+
+    static void rightinverseTriangle(int r, int c){
+        if(  r == 0) {
+            return;
+        }
+        if(c<r){
+            rightinverseTriangle(r, c+1);
+            System.out.print("*");
+        }else{
+            rightinverseTriangle(r-1,0);
+            System.out.println();
+        }
+    }
+//    public static void leftinverseTriangle(int r, int c){
+//        if( r == 0){
+//            return ;
+//        }
+//        if(c < r){
+//            System.out.print("*");
+//            leftinverseTriangle( r , c+1 );
+//        }else {
+//            System.out.println();
+//            inverseTriangle(r-1, 0 );
+//        }
+//    }
 
 //    public static void message() {
 //        // fibonacci number
@@ -60,7 +87,7 @@ public class Main {
         if(n <= 1){
             return 1;
         }
-       return n+sum(n-1);
+        return n+sum(n-1);
     }
     static int  product(int n){
         if(n <= 1){
@@ -70,7 +97,7 @@ public class Main {
     }
     static int sumOfDigits(int n){
         if(n == 0) {
-           return 0;
+            return 0;
         }
         return (n%10)+sumOfDigits(n/10) ;
     }

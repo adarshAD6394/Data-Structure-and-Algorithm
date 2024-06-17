@@ -4,52 +4,52 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        rightinverseTriangle(6, 0);
-//            leftinverseTriangle(6, 0);
-//        System.out.println(product(0));
-//        System.out.println(sum(10));
-//        print(10);
-//        int[] n = {2, 3, 5, 9, 10, 15, 17, 18, 26, 29, 35};
-//        int tar = 18;
-//        System.out.println(binary(n, tar, 0, n.length - 1));
+        rightTriangle(6, 0);
+            leftinverseTriangle(6, 0);
+        System.out.println(product(0));
+        System.out.println(sum(10));
+        print(10);
+        int[] n = {2, 3, 5, 9, 10, 15, 17, 18, 26, 29, 35};
+        int tar = 18;
+        System.out.println(binary(n, tar, 0, n.length - 1));
     }
 
-    static void rightinverseTriangle(int r, int c){
+    static void rightTriangle(int r, int c){
         if(  r == 0) {
             return;
         }
         if(c<r){
-            rightinverseTriangle(r, c+1);
+            rightTriangle(r, c+1);
             System.out.print("*");
         }else{
-            rightinverseTriangle(r-1,0);
+            rightTriangle(r-1,0);
             System.out.println();
         }
     }
-//    public static void leftinverseTriangle(int r, int c){
-//        if( r == 0){
-//            return ;
-//        }
-//        if(c < r){
-//            System.out.print("*");
-//            leftinverseTriangle( r , c+1 );
-//        }else {
-//            System.out.println();
-//            inverseTriangle(r-1, 0 );
-//        }
-//    }
+    public static void leftinverseTriangle(int r, int c){
+        if( r == 0){
+            return ;
+        }
+        if(c < r){
+            System.out.print("*");
+            leftinverseTriangle( r , c+1 );
+        }else {
+            System.out.println();
+            leftinverseTriangle(r-1, 0 );
+        }
+    }
 
-//    public static void message() {
-//        // fibonacci number
-//        System.out.println(fibo(30));
-//    }
+    public static void message() {
+        // fibonacci number
+        System.out.println(fibo(30));
+    }
 
-//    static int fibo(int n) {
-//        if (n < 2) {
-//            return n;
-//        }
-//        return fibo(n - 1) + fibo(n - 2);
-//    }
+    static int fibo(int n) {
+        if (n < 2) {
+            return n;
+        }
+        return fibo(n - 1) + fibo(n - 2);
+    }
 //    recursion base condition
 //    recurrence relation fibo(n) = fibo(n-1) + fibo (n-2)
 

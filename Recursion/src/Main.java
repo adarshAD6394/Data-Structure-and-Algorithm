@@ -1,17 +1,45 @@
-
+import java.util.Arrays;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        rightTriangle(6, 0);
-            leftinverseTriangle(6, 0);
-        System.out.println(product(0));
-        System.out.println(sum(10));
-        print(10);
-        int[] n = {2, 3, 5, 9, 10, 15, 17, 18, 26, 29, 35};
-        int tar = 18;
-        System.out.println(binary(n, tar, 0, n.length - 1));
+        int[] n = {1,2,3,4,5,6} ;
+        System.out.println(Arrays.toString(bubbleSort(n, n.length-1, 0)));
+//        rightTriangle(6, 0);
+//            leftinverseTriangle(6, 0);
+//        System.out.println(product(0));
+//        System.out.println(sum(10));
+//        print(10);
+//        int[] n = {2, 3, 5, 9, 10, 15, 17, 18, 26, 29, 35};
+//        int tar = 18;
+//        System.out.println(binary(n, tar, 0, n.length - 1));
+    }
+
+//    static int[] selectionSort(int[] n, int i, int j){
+//        if(i)
+//    }
+
+    static int[] bubbleSort(int[] n, int i, int j){
+        boolean swap = false;
+        if(i == 0){
+            return n;
+        }
+        if(j<i){
+            if( n[j] > n[j+1] ){
+                int temp = n[j+1];
+                n[j+1] = n[j];
+                n[j] = temp;
+                swap = true;
+                bubbleSort(n, i, j+1);
+            }
+            if(!swap){
+                return n;
+            }
+        }else{
+               bubbleSort(n, i-1, 0);
+        }
+        return n;
     }
 
     static void rightTriangle(int r, int c){

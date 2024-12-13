@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.Arrays;
 public class Eliminate390 {
     public static void main(String[] args) {
         int n = 10;

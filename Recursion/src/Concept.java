@@ -1,6 +1,6 @@
 public class Concept {
 
-//        Reverse a number
+    //        Reverse a number
     static int reverse(int n, int rev){
         if(n == 0){
             return rev;
@@ -9,4 +9,3 @@ public class Concept {
         return reverse(n/10, rev);
     }
 }
-

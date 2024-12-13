@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e49518e-8891-4866-8235-a6e240282523" name="Changes" comment="" />
+    <list default="true" id="c8b3c791-77c0-4d7a-b831-301b6a92020e" name="Changes" comment="bubble sort using recursion">
+      <change afterPath="$PROJECT_DIR$/../Backtracking/Backtracking.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Linkedlist/.idea/Linkedlist.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recursion.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recusrion.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Recusrion/Bubble.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Recusrion/Concept.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Concept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Concept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,71 +32,75 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;adarshAD6394&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="20056a5b-13fd-42ac-95b8-49ff48515f5b" />
-        <option name="url" value="https://github.com/adarshAD6394/Data-Structure-and-Algorithm.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
-    <option name="showPreview" value="true" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
+  &quot;associatedIndex&quot;: 5
 }</component>
-  <component name="ProjectId" id="2gpnj1Pw8EQtG2ZneNWJQFVjvCQ" />
+  <component name="ProjectId" id="2hz046nCOCdrRdOFoBbCAJi24Uz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Bubble.executor": "Run",
-    "Application.Concept.executor": "Run",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "B:/Notes-CSE/DSA/Recursion",
-    "onboarding.tips.debug.path": "B:/Notes-CSE/DSA/Recusrion/src/Main.java"
+    "last_opened_file_path": "B:/Notes-CSE/DSA/Recursion"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7e49518e-8891-4866-8235-a6e240282523" name="Changes" comment="" />
-      <created>1716403520171</created>
+      <changelist id="c8b3c791-77c0-4d7a-b831-301b6a92020e" name="Changes" comment="" />
+      <created>1718581404568</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1716403520171</updated>
+      <updated>1718581404568</updated>
     </task>
-    <task id="LOCAL-00001" summary="Recursion lect 2">
+    <task id="LOCAL-00001" summary="added new changes">
       <option name="closed" value="true" />
-      <created>1717629227231</created>
+      <created>1718590548114</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1717629227231</updated>
+      <updated>1718590548114</updated>
     </task>
-    <task id="LOCAL-00002" summary="Recursion lect 2">
+    <task id="LOCAL-00002" summary="added new changes">
       <option name="closed" value="true" />
-      <created>1717629237304</created>
+      <created>1718590644818</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1717629237304</updated>
+      <updated>1718590644818</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added new changes">
+      <option name="closed" value="true" />
+      <created>1718590781312</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718590781312</updated>
+    </task>
+    <task id="LOCAL-00004" summary="bubble sort using recursion">
+      <option name="closed" value="true" />
+      <created>1718667785937</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718667785937</updated>
+    </task>
+    <task id="LOCAL-00005" summary="bubble sort using recursion">
+      <option name="closed" value="true" />
+      <created>1718667877650</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718667877650</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,7 +115,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Recursion lect 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Recursion lect 2" />
+    <MESSAGE value="added new changes" />
+    <MESSAGE value="bubble sort using recursion" />
+    <option name="LAST_COMMIT_MESSAGE" value="bubble sort using recursion" />
   </component>
 </project>

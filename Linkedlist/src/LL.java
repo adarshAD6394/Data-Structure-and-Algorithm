@@ -97,6 +97,16 @@ public class LL {
         return val;
     }
 
+    // length of list
+    public int length(LL.Node list){
+        int c =0;
+        while(list != null){
+            c++;
+            list = list.next;
+        }
+        return c;
+    }
+
 //   // delete function by val
 //   public void deleteByValue(int val){
 //       Node temp = find(val);
@@ -105,7 +115,7 @@ public class LL {
 
 //    merge two list
 // Question: Merge two list
-public Node mergeTwoLists(LL lista, LL listb) {
+public Node mergeTwoLists(LL lista, LL listb) { // this code will not be able to handle edge cases.
     Node list1 = lista.head;
     Node list2 = listb.head;
     Node l1;
@@ -129,7 +139,6 @@ public Node mergeTwoLists(LL lista, LL listb) {
         }
         l1 = l1.next;
     }
-
     return ans;
 }
 
@@ -155,9 +164,9 @@ public Node mergeTwoLists(LL lista, LL listb) {
         System.out.println("END");
     }
 
-    public class Node {
-        private int val;
-        private Node next;
+    public static class Node {
+        public int val;
+        public Node next;
 
         public Node(int val){
             this.val = val;
@@ -165,6 +174,10 @@ public Node mergeTwoLists(LL lista, LL listb) {
         public Node(int val, Node next) {
             this.val = val;
             this.next = next;
+        }
+        public Node(){
+            this.val = -1;
+            this.next = null;
         }
     }
 }

@@ -15,42 +15,47 @@ public class SwapNodes {
             ans = ans.next;
         }
     }
-    static LL.Node swapPairs(LL.Node head) {
-        if(head == null || head.next == null){
-            return head;
-        }
-        if(head.next.next == null){
-            LL.Node t = head.next;
-            head.next = null;
-            t.next = head;
-            return t;
-        }
-        LL.Node t = head;
-        LL.Node b = head;
-        LL.Node f = t.next;
-        int count = 1;
-        head = f;
-        while(t.next != null && t.next.next != null) {
-            t.next = f.next;
-            f.next = t;
-            if(count == 1){
-                count++;
-            }else{
-                b.next = f;
-            }
-            b = t;
-            t = t.next;
-            if(t.next == null){
-                return head;
-            }
-            f = t.next;
-        }
-        if(f.next == null){
-            t.next = f.next;
-            f.next = t;
-            b.next = f;
-            return head;
-        }
+//    static LL.Node swapPairs(LL.Node head) {
+//        if(head == null || head.next == null){
+//            return head;
+//        }
+//        if(head.next.next == null){
+//            LL.Node t = head.next;
+//            head.next = null;
+//            t.next = head;
+//            return t;
+//        }
+//        LL.Node t = head;
+//        LL.Node b = head;
+//        LL.Node f = t.next;
+//        int count = 1;
+//        head = f;
+//        while(t.next != null && t.next.next != null) {
+//            t.next = f.next;
+//            f.next = t;
+//            if(count == 1){
+//                count++;
+//            }else{
+//                b.next = f;
+//            }
+//            b = t;
+//            t = t.next;
+//            if(t.next == null){
+//                return head;
+//            }
+//            f = t.next;
+//        }
+//        if(f.next == null){
+//            t.next = f.next;
+//            f.next = t;
+//            b.next = f;
+//            return head;
+//        }
+//        return head;
+//    }
+
+    static LL.Node swapPairs(LL.Node head){
+        
         return head;
     }
 }

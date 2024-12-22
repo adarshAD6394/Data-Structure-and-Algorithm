@@ -30,8 +30,6 @@ public class oddEven {
             even.next = odd.next;
             even = even.next;
         }
-
-        // Connect the last odd node to the head of the even list
         odd.next = evenHead;
 
         return head;

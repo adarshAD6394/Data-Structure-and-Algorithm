@@ -1,0 +1,49 @@
+//import java.util.Scanner;
+//
+//class MergeList{
+//    public static void main (String [] args){
+//    Scanner s = new Scanner(System.in);
+//
+////    creating list
+//        LL list1 = new LL();
+//        LL list2 = new LL();
+//
+////    Input
+//        System.out.println("Enter the no. of element for first list");
+//        int n = s.nextInt();
+//        System.out.println("Enter the element of list");
+//        for (int i = 0; i<n;i++){
+//            list1.add(s.nextInt());
+//        }
+//
+//        System.out.println("Enter the no. of element for first list");
+//        int m = s.nextInt();
+//        System.out.println("Enter the element for first list");
+//        for (int i = 0;i<m;i++){
+//            list2.add(s.nextInt());
+//        }
+//
+//        System.out.println(list1);
+//        System.out.println(list2);
+//        System.out.println(mergerTwoLists(list1,list2));
+//    }
+//
+//    public static LinkedList mergeTwoLists(LinkedList list1,LinkedList list2){
+//        LinkedList cur = list1;
+//        LinkedList prev = list1;
+//        LinkedList h2 = list2;
+//        while(h2.val >= cur.val){
+//            prev = cur;
+//            cur = cur.next;
+//        }
+//        list2 = h2;
+//        h2 = h2.next;
+//        list2.next = cur;
+//        prev.next = list2;
+//        prev = list2;
+//        if(h2.val == null){
+//            return list1;
+//        }
+//        mergeTwoLists(list1, h2);
+//    }
+//}

@@ -22,30 +22,21 @@ public class prblm2000ReversePrefixOfword {
         scanner.close();
 
     }
+
     public static String reversePrefix(String word, char ch) {
-        Stack<Character> stack = new Stack<>();
+        Stack<Character> s = new Stack<>();
         StringBuilder result = new StringBuilder();
-
-        int index = 0;
-        while (index < word.length()) {
-            stack.push(word.charAt(index));
-            // Found ch
-            if (word.charAt(index) == ch) {
-                // Add characters through ch to the result in reverse order
-                while (!stack.isEmpty()) {
-                    result.append(stack.pop());
-                }
-                index++;
-                // Add the rest of the characters to result
-                while (index < word.length()) {
-                    result.append(word.charAt(index));
-                    index++;
-                }
-                return result.toString();
-            }
-            index++;
+        int index = word.indexOf(ch);
+        if (index == -1) {
+            return word;
         }
-
-        return word;
+        for (int i = 0; i <= index; i++) {
+            s.push(word.charAt(i));
+        }
+        while (!s.isEmpty()) {
+            result.append(s.pop());
+        }
+        result.append(word.substring(index + 1));
+        return result.toString();
     }
 }

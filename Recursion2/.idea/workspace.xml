@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8b3c791-77c0-4d7a-b831-301b6a92020e" name="Changes" comment="Now practising recursion with linkedlist.">
-      <change afterPath="$PROJECT_DIR$/../QueueDS/src/NewDeque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QueueDS/src/NewQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Recursion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Recursion/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Stack/Stack/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Stack/Stack/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Stack/Stack/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Stack/Stack/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Stack/Stack/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Stack/Stack/src/Problem1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../String StringBuilder/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../String StringBuilder/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../String StringBuilder/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../String StringBuilder/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../String StringBuilder/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../String StringBuilder/Notes.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../String StringBuilder/String StringBuilder.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,26 +36,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.CountGood.executor&quot;: &quot;Run&quot;,
-    &quot;Application.EliminateGame.executor&quot;: &quot;Run&quot;,
-    &quot;Application.EliminationGame.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.Fact.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Kth1545.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PowerofThree.executor&quot;: &quot;Run&quot;,
-    &quot;Application.kthCharacter.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Notes-CSE/DSA/Recursion2&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.CountGood.executor": "Run",
+    "Application.EliminateGame.executor": "Run",
+    "Application.EliminationGame.executor": "Debug",
+    "Application.Fact.executor": "Run",
+    "Application.Kth1545.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.PowerofThree.executor": "Run",
+    "Application.kthCharacter.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Notes-CSE/DSA/String-StringBuilder",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="PowerofThree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PowerofThree" />

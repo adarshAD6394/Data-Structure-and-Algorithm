@@ -1,5 +1,7 @@
 package medium;
 
+import java.util.LinkedList;
+
 public class oddEven {
     public static void main(String[] args) {
         LL.Node f = new LL.Node(6, null);

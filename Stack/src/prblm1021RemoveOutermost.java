@@ -1,7 +1,7 @@
 import java.util.*;
  class prblm1021RemoveOutermost {
     public static void main(String[] args) {
-        String str = "()()";
+        String str = "(((";
         System.out.println(removeOuterParenthese(str));
         System.out.println(optimiseOuterParentheses(str));
     }
@@ -38,19 +38,16 @@ import java.util.*;
         int i = -1;
         char[] c = s.toCharArray();
         StringBuilder ans = new StringBuilder();
-        for(char a : c){
-            if(i<0 && a == '('){
+        for (char a : c) {
+            if (i < 0 && a == '(') {
                 i++;
-            }
-            else if(i>=0 && a == '('){
+            } else if (i >= 0 && a == '(') {
                 ans.append(a);
                 i++;
-            }
-            else if( i>0 && a == ')'){
+            } else if (i > 0 && a == ')') {
                 ans.append(a);
                 i--;
-            }
-            else if( i==0 && a == ')'){
+            } else if (i == 0 && a == ')') {
                 i--;
             }
         }

@@ -7,6 +7,7 @@ public class prblm921 {
         System.out.println("Enter the String");
         String str = s.nextLine();
         System.out.println(minAddToMakeValid(str));
+
     }
     public static int minAddToMakeValid(String s) {
         char[] c = s.toCharArray();
@@ -28,5 +29,25 @@ public class prblm921 {
             }
         }
         return (int)Math.abs(i);
+    }
+
+    static int optimise(String str){
+        int open = 0;
+        int close = 0;
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+            if (c == '(') {
+                open++;
+            }
+            if(c == ')'){
+                if(open == 0){
+                    close++;
+                }
+                else{
+                    open--;
+                }
+            }
+        }
+        return open+close;
     }
 }

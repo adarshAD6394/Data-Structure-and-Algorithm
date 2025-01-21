@@ -1,3 +1,5 @@
+package Trees;
+
 public class BT1st {
     public static void main(String[] args) {
         AVL tree = new AVL();

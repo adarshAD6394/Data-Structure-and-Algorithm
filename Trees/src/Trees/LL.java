@@ -1,4 +1,4 @@
-package LinkedList;
+package Trees;
 public class LL {
 
     private Node head;
@@ -99,7 +99,7 @@ public class LL {
     }
 
     // length of list
-    public int length(LL.Node list){
+    public int length(Node list){
         int c =0;
         while(list != null){
             c++;

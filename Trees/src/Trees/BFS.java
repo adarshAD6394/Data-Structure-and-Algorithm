@@ -1,8 +1,5 @@
 package Trees;
 
-import LinkedList.LL;
-
-
 public class BFS {
     public static void main(String[] args) {
         System.out.println(BFS());

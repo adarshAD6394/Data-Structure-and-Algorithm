@@ -25,31 +25,35 @@ public class TreeNode {
     public TreeNode(int val){}
 
     public static TreeNode.Node buildTree(Integer[] input){
-        if(input == null && input.length == 0 && input[0] == null) return null;
+        if(input == null || input.length == 0 || input[0] == null) {
+            return null;
+        }
+        else{
+            TreeNode.Node root = new TreeNode.Node(input[0]);
+            List<Node> queue = new ArrayList<>();
+            queue.add(root);
 
-        TreeNode.Node root = new TreeNode.Node(input[0]);
-        List<Node> queue = new ArrayList<>();
-        queue.add(root);
-
-        int i = 1;
-        while(i<input.length){
-            TreeNode.Node  curr = queue.remove(0);
+            int i = 1;
+            while(i<input.length){
+                TreeNode.Node  curr = queue.remove(0);
 
 //            Add Left Child
-            if(i<input.length && input[i] != null){
-                curr.left = new TreeNode.Node(input[i]);
-                queue.add(curr.left);
-            }
-            i++;
+                if(i<input.length && input[i] != null){
+                    curr.left = new TreeNode.Node(input[i]);
+                    queue.add(curr.left);
+                }
+                i++;
 
 //            Add right child
-            if(i<input.length && input[i] != null){
-                curr.right = new TreeNode.Node(input[i]);
-                queue.add(curr.right);
+                if(i<input.length && input[i] != null){
+                    curr.right = new TreeNode.Node(input[i]);
+                    queue.add(curr.right);
+                }
+                i++;
             }
-            i++;
+            return root;
         }
-        return root;
+
     }
 
     public void populate(Scanner scanner) {

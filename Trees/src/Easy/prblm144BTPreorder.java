@@ -25,4 +25,19 @@ public class prblm144BTPreorder {
         preorderTraversal(node.left, queue);
         preorderTraversal(node.right, queue);
     }
+//    private static void preorderTraversal(TreeNode.Node node, List<Integer> queue){
+//        if(node == null){
+//            return;
+//        }
+//        if (node.right != null && node.left == null){
+//            queue.add(-1);
+//        }
+//        queue.add(node.val);
+//        if (node.left != null && node.right == null){
+//            queue.add(-1);
+//        }
+//        preorderTraversal(node.left, queue);
+//        preorderTraversal(node.right, queue);
+//    }
+
 }

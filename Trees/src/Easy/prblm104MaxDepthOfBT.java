@@ -13,13 +13,13 @@ public class prblm104MaxDepthOfBT {
     public static void main(String[] args) {
         Integer[] input = {3,9,20,null,null,15,7};
         TreeNode.Node root = buildTree(input);
-//        System.out.println(maxDepth(root));
+        System.out.println(maxDepth(root));
     }
-//    public static int maxDepth(TreeNode.Node root) {
-//        List<Integer> queue = new ArrayList<>();
-//
-//        int n = (int) (Math.log()/ Math.log(2));
-//        return n+1;
-//    }
+    public static int maxDepth(TreeNode.Node root) {
+        if(root == null) return 0;
+        int lh = maxDepth(root.left);
+        int rh = maxDepth(root.right);
+        return 1+Math.max(lh, rh);
+    }
 
 }

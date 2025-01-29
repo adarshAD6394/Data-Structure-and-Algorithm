@@ -16,8 +16,24 @@ public class prblm102LevelOrder {
     }
 //    Recursive approach
 //    public static List<List<Integer>> levelOrder(TreeNode.Node root) {
-//
+//       List<List<Integer>> ans = new ArrayList<>();
+//       int level = 0;
+//       levelOrderHelper(ans, root, level);
+//       return ans;
 //    }
+//    public static void levelOrderHelper(List<List<Integer>> output, TreeNode.Node root, int level) {
+//        if (root == null) {
+//            return;
+//        } else {
+//            if (level >= output.size()) {
+//                output.add(new ArrayList<>());
+//            }
+//            output.get(level).add(root.val);
+//            levelOrderHelper(output, root.left, level + 1);
+//            levelOrderHelper(output, root.right, level + 1);
+//        }
+//    }
+
 //    Iterative appraoch
     public static List<List<Integer>> levelOrder(TreeNode.Node node){
         if(node == null) return new ArrayList<>();

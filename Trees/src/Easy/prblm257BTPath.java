@@ -6,7 +6,7 @@ import Trees.TreeNode;
 import static Trees.TreeNode.buildTree;
 import static Trees.TreeNode.printLevelOrder;
 
-public class prblmBTPath {
+public class prblm257BTPath {
     public void main(String[] args) {
         Integer[] input = {1,2,3,null,5};
         TreeNode.Node root = buildTree(input);

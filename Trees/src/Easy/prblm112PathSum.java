@@ -9,7 +9,7 @@ public class prblm112PathSum {
     public void main(String[] args) {
         Integer[] input = {};
         TreeNode.Node root = buildTree(input);
-        int n = ;
+        int n = 5;
         printLevelOrder(root);
         System.out.println(hasPathSum(root, n));
     }

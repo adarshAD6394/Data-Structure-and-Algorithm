@@ -14,33 +14,47 @@ public class prblm113PathSumII {
         int targetSum = 45;
         System.out.println(pathSum(root, targetSum));
     }
+
+//    readable code
+
     public List<List<Integer>> pathSum(TreeNode.Node root, int targetSum) {
         List<List<Integer>> ans = new ArrayList<>();
-        List<Integer> bas = new ArrayList<>();
-        pathsum(ans, bas, targetSum, root);
+        pathsum2(ans, new ArrayList<>(), targetSum, root);
         return ans;
     }
 
-    public List<Integer> pathsum(List<List<Integer>> ans, List<Integer> bas, int targetSum, TreeNode.Node node){
-        if(node == null) return null;
-        else{
-          if(node.left == null && node.right == null){
-              if(targetSum-node.val == 0){
-                  bas.add(node.val);
-                  List<Integer> mid = new ArrayList<>(bas);
-                  ans.add(mid);
-                  bas.removeLast();
-              }
-              return bas;
-          }
-          else {
-              bas.add(node.val);
-          }
-          pathsum(ans, bas, targetSum - node.val, node.left);
-          pathsum(ans, bas, targetSum - node.val, node.right);
-          bas.removeLast();
+    public void pathsum2(List<List<Integer>> ans, List<Integer> bas, int targetSum, TreeNode.Node node){
+        if(node == null) return;
+        bas.add(node.val);
+        if(node.left == null && node.right == null && targetSum-node.val == 0){
+            ans.add(new ArrayList<>(bas));
+        }else{
+            pathsum2(ans, bas, targetSum-node.val, node.left);
+            pathsum2(ans, bas, targetSum-node.val, node.right);
         }
-        return bas;
+        bas.removeLast();
     }
+
+//    public List<Integer> pathsum(List<List<Integer>> ans, List<Integer> bas, int targetSum, TreeNode.Node node){
+//        if(node == null) return null;
+//        else{
+//          if(node.left == null && node.right == null){
+//              if(targetSum-node.val == 0){
+//                  bas.add(node.val);
+//                  List<Integer> mid = new ArrayList<>(bas);
+//                  ans.add(mid);
+//                  bas.removeLast();
+//              }
+//              return bas;
+//          }
+//          else {
+//              bas.add(node.val);
+//          }
+//          pathsum(ans, bas, targetSum - node.val, node.left);
+//          pathsum(ans, bas, targetSum - node.val, node.right);
+//          bas.removeLast();
+//        }
+//        return bas;
+//    }
 }
 

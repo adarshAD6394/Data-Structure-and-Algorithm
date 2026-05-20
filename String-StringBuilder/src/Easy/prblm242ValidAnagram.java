@@ -27,4 +27,26 @@ public class prblm242ValidAnagram {
         }
         return h1.equals(h2);
     }
+
+    
+
+//    public static boolean isAnagram(String s1, String s2) {
+//        if (s1.length() != s2.length()){
+//            return false;
+//        }
+//        HashMap<Character, Integer> h1 = new HashMap<>();
+//        for (char c : s1.toCharArray()){
+//            h1.merge(c, 1, Integer::sum);
+//        }
+//        for (char c : s2.toCharArray()){
+//            h1.merge(c, -1, Integer::sum);
+//        }
+//
+//        for (int val : h1.values()) {
+//            if (val != 0){
+//                return false;
+//            }
+//        }
+//        return true;
+//    }
 }

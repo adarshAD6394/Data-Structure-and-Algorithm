@@ -14,7 +14,7 @@ public class prblm662Maxwidth {
         Integer[] input = {1,3,2,5,null,null,9,6,null,7};
         TreeNode.Node root = buildTree(input);
         printLevelOrder(root);
-        System.out.println(widthOfBinaryTree(root));
+
     }
     public int widthOfBinaryTree(TreeNode.Node root) {
         if(root == null) return 0;
